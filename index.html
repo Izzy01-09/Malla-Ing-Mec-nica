@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Malla Interactiva - Ing. Mecánica</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>💖 Malla Interactiva - Ingeniería Mecánica</h1>
+    <div class="stats">
+      <p id="creditos">Créditos aprobados: 0 / 160</p>
+      <p id="porcentaje">Avance: 0%</p>
+    </div>
+  </header>
+  <main id="contenedor-semestres"></main>
+  <footer>
+    <p id="alerta-saber"></p>
+    <p id="alerta-seminario"></p>
+  </footer>
+  <script>
+    const materiasData = [
+  {
+    "semestre": 1,
+    "materias": [
+      {
+        "codigo": "452001",
+        "nombre": "C\u00e1lculo I",
+        "creditos": 3
+      },
+      {
+        "codigo": "452002",
+        "nombre": "Geometr\u00eda",
+        "creditos": 3
+      },
+      {
+        "codigo": "452003",
+        "nombre": "Qu\u00edmica General y Lab",
+        "creditos": 3
+      },
+      {
+        "codigo": "452004",
+        "nombre": "Algoritmo y Programaci\u00f3n",
+        "creditos": 2
+      },
+      {
+        "codigo": "452005",
+        "nombre": "Introducci\u00f3n a la Ingenier\u00eda Mec\u00e1nica",
+        "creditos": 2
+      },
+      {
+        "codigo": "452006",
+        "nombre": "Competencias Comunicativas I",
+        "creditos": 2
+      },
+      {
+        "codigo": "452007",
+        "nombre": "Aprendizaje Aut\u00f3nomo",
+        "creditos": 1
+      }
+    ]
+  },
+  {
+    "semestre": 2,
+    "materias": [
+      {
+        "codigo": "452008",
+        "nombre": "C\u00e1lculo II",
+        "creditos": 3,
+        "prerrequisitos": [
+          "452001"
+        ]
+      },
+      {
+        "codigo": "452009",
+        "nombre": "\u00c1lgebra Lineal",
+        "creditos": 3,
+        "prerrequisitos": [
+          "452002"
+        ]
+      },
+      {
+        "codigo": "452010",
+        "nombre": "F\u00edsica I",
+        "creditos": 3,
+        "prerrequisitos": [
+          "452001",
+          "452002"
+        ]
+      },
+      {
+        "codigo": "452011",
+        "nombre": "Dibujo de Ingenier\u00eda",
+        "creditos": 2
+      },
+      {
+        "codigo": "452012",
+        "nombre": "Est\u00e1tica",
+        "creditos": 3,
+        "prerrequisitos": [
+          "452002"
+        ]
+      },
+      {
+        "codigo": "452013",
+        "nombre": "Competencias Comunicativas II",
+        "creditos": 2,
+        "prerrequisitos": [
+          "452006"
+        ]
+      },
+      {
+        "codigo": "452014",
+        "nombre": "Desarrollo Personal y Profesional",
+        "creditos": 1
+      }
+    ]
+  },
+  {
+    "semestre": 10,
+    "materias": [
+      {
+        "codigo": "452061",
+        "nombre": "Seminario de Grado",
+        "creditos": 1,
+        "prerrequisitos_creditos": 128
+      },
+      {
+        "codigo": "452066",
+        "nombre": "Proyecto de Grado",
+        "creditos": 3
+      },
+      {
+        "codigo": "452063",
+        "nombre": "Electiva de Profundizaci\u00f3n I",
+        "creditos": 3
+      },
+      {
+        "codigo": "452065",
+        "nombre": "Electiva de Profundizaci\u00f3n II",
+        "creditos": 3
+      },
+      {
+        "codigo": "452067",
+        "nombre": "Gerencia para Ingenieros",
+        "creditos": 1
+      },
+      {
+        "codigo": "452064",
+        "nombre": "CIM",
+        "creditos": 3
+      }
+    ]
+  }
+];
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>

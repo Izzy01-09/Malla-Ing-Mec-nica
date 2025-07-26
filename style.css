@@ -1,0 +1,53 @@
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #fdf6f9;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+header {
+  background: linear-gradient(to right, #f8bbd0, #e1bee7, #bbdefb);
+  color: #333;
+  padding: 1rem;
+  text-align: center;
+}
+.stats {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 0.5rem;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  gap: 1rem;
+}
+.semestre {
+  background: #fff;
+  border-left: 8px solid #e1bee7;
+  border-radius: 1rem;
+  padding: 1rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+.semestre h2 {
+  color: #9c27b0;
+}
+.materia {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f3e5f5;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  margin-top: 0.5rem;
+}
+input[type="checkbox"]:disabled {
+  opacity: 0.5;
+}
+footer {
+  padding: 1rem;
+  text-align: center;
+  font-weight: bold;
+}
